@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>Question</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center">Question about COVID-19 virus</h2>
+
+<!--<div class="w3-content w3-display-container"-->
+
+<!--  <img class="mySlides" src="img_snowtops.jpg" style="width:100%">-->
+<!--  <img class="mySlides" src="img_lights.jpg" style="width:100%">-->
+<!--  <img class="mySlides" src="img_mountains.jpg" style="width:100%">-->
+<!--  <img class="mySlides" src="img_forest.jpg" style="width:100%">-->
+<div class="w3-container">
+
+
+
+  <div class="w3-panel w3-card"><p>Do you know how much washington people die in COVID-19 virus?</p></div>
+  <div class="w3-panel w3-card"><p>Answer :88</p></div>
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<div style="border: 0px solid">
+  <input class="w3-button w3-red" type="button" value="Next" style="display: block; margin: 0 auto;">
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("w3-panel w3-card");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
+<div1 style = "position:absolute; left:100px; top:200px;">
+
+   <a href="/correct" class="w3-button w3-red">True</a>
+</div1>
+
+<div2 style = "position:absolute; left:810px; top:200px;">
+    <a  class="w3-button w3-blue">Next</a>
+
+</div2>
+
+
+<div3 style = "position:absolute; left:1200px; top:200px;" >
+
+  <a href="/wrong_explain" class="w3-button w3-black">False</a>
+</div3>

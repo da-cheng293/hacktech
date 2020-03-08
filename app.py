@@ -82,9 +82,15 @@ def slide():
     return render_template('slide.html')
 
 
+@app.route('/correct', methods=['GET', 'POST'])
 
+def correct():
+    return render_template('correct.html')
 
+@app.route('/wrong_explain', methods=['GET', 'POST'])
 
+def wrong_explain():
+    return render_template('wrong_explain.html')
 
 if __name__ == '__main__':
 
