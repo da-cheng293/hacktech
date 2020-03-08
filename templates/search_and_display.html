@@ -3,6 +3,7 @@
 <title>Question</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <style>
 .mySlides {display:none;}
 </style>
@@ -38,12 +39,15 @@ div3 {
 
 
 <body>
-
+  {% include 'includes/_navbar.html' %}
 <h2 class="w3-center">Question about COVID-19 virus</h2>
 <!-- <div4 style = "position:relative; left:200px; top:200px;">-->
 <!--  {% include 'includes/_messages.html' %}-->
 <!--        </div4>-->
-  <div1 style = "position:relative; left:200px; top:150px;">
+<div5 style = "position:relative; left:0px; top:70px; ">
+  {% include 'includes/_messages.html' %}
+        </div5>
+  <div1 style = "position:relative; left:700px; top:150px;">
                <form id="tfnewsearch" method="post" action="/search_content">
             <input type="text" class="tftextinput" name="q" size="40" maxlength="300">
 
@@ -51,16 +55,16 @@ div3 {
     </form>
                 </div1>
 <br>
-  <div4 style = "position:relative; left:700px; top:100px;">
+  <div4 style = "position:relative; left:1200px; top:100px;">
      <label> or  </label>
 
           </div4>
-  <div3 style = "position:relative; left:680px; top:100px;">
+  <div3 style = "position:relative; left:1180px; top:100px;">
      <label>  upload a file </label>
 
           </div3>
 
- <div2 style = "position:relative; left:800px; top:100px;">
+ <div2 style = "position:relative; left:1300px; top:100px;">
 
 <br>
 <form method="post" action="/upload_file" enctype="multipart/form-data">
@@ -76,9 +80,11 @@ div3 {
 
       </div2>
 <br>
- <div5 style = "position:relative; left:200px; top:200px;">
-  {% include 'includes/_messages.html' %}
-        </div5>
 
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.6.2/basic/ckeditor.js"></script>
+    <script type="text/javascript">
+      CKEDITOR.replace('editor')
+    </script>
 </body>
 </html>
