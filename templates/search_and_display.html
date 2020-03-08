@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<title>Question</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+
+<style>
+div1 {
+
+  margin: 300px 300px 300px 700px;
+
+}
+
+
+</style>
+
+
+<style>
+div2 {
+
+  margin: 25px 100px 150px 100px;
+
+}
+</style>
+
+
+
+<style>
+div3 {
+
+  margin: 25px 100px 150px 100px;
+
+}
+</style>
+<body>
+
+<h2 class="w3-center">Question about COVID-19 virus</h2>
+
+
+  <div1 style = "position:relative; left:200px; top:150px;">
+               <form id="tfnewsearch" method="post" action="/search_content">
+            <input type="text" class="tftextinput" name="q" size="40" maxlength="300">
+
+                   <input type="submit" value="search" class="tfbutton">
+    </form>
+                </div1>
+<br>
+  <div4 style = "position:relative; left:700px; top:100px;">
+     <label> or  </label>
+
+          </div4>
+  <div3 style = "position:relative; left:680px; top:100px;">
+     <label>  upload a file </label>
+
+          </div3>
+
+ <div2 style = "position:relative; left:800px; top:100px;">
+
+<br>
+<form method="post" action="/upload_file" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Upload">
+	</p>
+</form>
+
+      </div2>
+<br>
+
+
+</body>
+</html>

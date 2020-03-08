@@ -92,6 +92,23 @@ def correct():
 def wrong_explain():
     return render_template('wrong_explain.html')
 
+@app.route('/search_and_display', methods=['GET', 'POST'])
+
+def search_and_display():
+    return render_template('search_and_display.html')
+
+
+@app.route('/search_content', methods=['GET', 'POST'])
+
+def search_content():
+    return
+
+@app.route('/upload_file', methods=['GET', 'POST'])
+
+def upload_file():
+    return
+
+
 if __name__ == '__main__':
 
    app.run(debug=True)
