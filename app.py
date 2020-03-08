@@ -101,7 +101,8 @@ def search_and_display():
 @app.route('/search_content', methods=['GET', 'POST'])
 
 def search_content():
-    return
+    flash('test complete', 'success')
+    return  render_template('search_and_display.html')
 
 @app.route('/upload_file', methods=['GET', 'POST'])
 

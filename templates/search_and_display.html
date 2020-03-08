@@ -35,11 +35,14 @@ div3 {
 
 }
 </style>
+
+
 <body>
 
 <h2 class="w3-center">Question about COVID-19 virus</h2>
-
-
+<!-- <div4 style = "position:relative; left:200px; top:200px;">-->
+<!--  {% include 'includes/_messages.html' %}-->
+<!--        </div4>-->
   <div1 style = "position:relative; left:200px; top:150px;">
                <form id="tfnewsearch" method="post" action="/search_content">
             <input type="text" class="tftextinput" name="q" size="40" maxlength="300">
@@ -73,7 +76,9 @@ div3 {
 
       </div2>
 <br>
-
+ <div5 style = "position:relative; left:200px; top:200px;">
+  {% include 'includes/_messages.html' %}
+        </div5>
 
 </body>
 </html>
